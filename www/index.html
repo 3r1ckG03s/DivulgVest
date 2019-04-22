@@ -1,24 +1,149 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-  <script src="components/loader.js"></script>
-  <script src="lib/onsenui/js/onsenui.min.js"></script>
 
   <link rel="stylesheet" href="components/loader.css">
-  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
-  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <script>
-    ons.ready(function() {
-      console.log("Onsen UI is ready!");
-    });
-  </script>
+  <script src="components/loader.js"></script>
+  <script src="css/js/jquery.min.js"></script>
+  <script src="css/js/bootstrap.min.js"></script>
+  <script src="css/js/comando.js"></script>
+
 </head>
 <body>
-  This is a template for Onsen UI app.
+
+  <!-- App Title -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>Vestibulinho ETEC Adolpho Berezin</h3>
+        <hr>
+      </div>
+    </div>
+
+    <!-- Jumbotron -->
+
+    <div class="jumbotron">
+
+      <img src="img/logo.png" alt="logo" id="logo">
+      <button class="btn btn-primary" id="btn1" data-toggle="modal" data-target="#int">Institucional</button>
+      <hr>
+
+      <img src="img/curso.png" alt="curso" id="curso">
+      <button class="btn btn-danger" id="btn2" data-toggle="modal" data-target="#cso">Cursos Oferecidos</button>
+      <hr>
+
+      <img src="img/local.png" alt="local" id="local">
+      <button class="btn btn-success" id="btn3">Localização ETECAB</button>
+      <hr>
+
+      <!-- Modal Btn1 -->
+
+      <div id="int" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Institucional</h4>
+              <hr>
+
+              <div class="modal-body">
+                <p>Meu ovo = Mojang </p>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Voltar</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Btn2 -->
+
+      <div id="cso" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Cursos Na ETEC AB</h4>
+              <hr>
+
+              <div class="modal-body">
+                <p>Cursos oferecidos<br>
+                <hr>
+                  
+                <h5>Administração<br>
+                Período: Noite - 40 vagas<br>
+                </h5><hr>
+
+                <h5>Desenvolvimento de Sistemas<br>
+                Período: Tarde - 40 vagas<br>
+                <h5><hr>
+
+                <h5>Edificações<br>
+                Período: Noite - 40 vagas<br>
+                <h5><hr>
+
+                <h5>Enfermagem<br>
+                Período: Manhã - 40 vagas<br>
+                <h5><hr>
+
+                <h5>Para este curso o candidato deverá ter idade mínima de 18 (dezoito) anos a completar até o dia 31/07/2019.<br>
+                <h5><hr>
+
+                <h5>Nos 2º e 4º módulos do referido curso técnico, o estágio curricular supervisionado será no período diurno, em instituições de saúde públicas e/ou privadas fora da Etec / Extensão de Etec<br>.
+                <h5><hr>
+
+                <h5>Manutenção e Suporte em Informática<br>
+                Período: Noite - 40 vagas<br>
+                <h5><hr>
+
+                <h5>Turismo Receptivo<br>
+                Período: Noite - 40 vagas<br>
+                <h5><hr>
+                </p>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Voltar</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Btn3 -->
+
+    <div id="gps" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Localização da ETEC</h4>
+            <hr>
+
+            <div class="modal-body">
+              <p>Hello Baka</p>
+            </div>
+            
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Voltar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
