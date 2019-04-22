@@ -3,6 +3,11 @@
 h3{
   text-align: center;
   font-size: 30px;
+  color: white;
+}
+
+h4{
+  font-size: 20px;
   color: black;
 }
 
@@ -11,13 +16,13 @@ h5{
 }
 
 body{
-  background-color: lightgray;
+  background-color: black;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 hr{
-  border: 1px black solid;
+  border: 1px white solid;
 }
 
 /* Style Class */
@@ -31,35 +36,22 @@ hr{
 }
 /* Style Id */
 
-#logo{
-  width: 25%;
-  height: 25%;
-}
-
 #btn1{
   text-align: center;
   font-size: 25px;
-  margin-left: 20px;
-}
-
-#curso{
-  width: 35%;
-  height: 35%;
 }
 
 #btn2{
   text-align: center;
-  font-size: 16px;
-  margin-left: 20px;
-}
-
-#local{
-  width: 25%;
-  height: 25%;
+  font-size: 25px;
 }
 
 #btn3{
   text-align: center;
-  font-size: 18px;
-  margin-left: 5px;
+  font-size: 25px;
+}
+
+#link{
+  color: white;
+  font-size: 20px;
 }
