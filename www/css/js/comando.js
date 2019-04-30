@@ -1,22 +1,20 @@
 // Vibrate
 
 $(document).on('click', '#int', function () {
-  navigator.vibrate(6000);
+  navigator.vibrate(2000);
 });
 
 // Beep
 
 $(document).on('click', '#gps', function () {
-  navigator.notification.beep(3);
+  navigator.notification.beep(1);
 });
 
-//Mapa Local etec
-
-//Código para exibir o mapa
+// Show Map
 $(document).on('click', '#gps', function () {
   window.onload = function () {
 
-    //configurando plugin de notificações
+    // Notification Plugin Configuration
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
       console.log(navigator.notification);
@@ -25,7 +23,7 @@ $(document).on('click', '#gps', function () {
    L.mapquest.key = 'VuATH4WRuwVc1ZJUa2GyU3oOaDiljlOr';
 
       var map = L.mapquest.map('map', {
-        //Configurando coordenadas recebidas pelo gps
+        // GPS Coordinate Configuration
         center: [-24.1201408, -46.6753722],
         layers: L.mapquest.tileLayer('map'),
         zoom: 12
