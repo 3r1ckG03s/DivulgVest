@@ -52,12 +52,22 @@ hr{
   font-size: 25px;
 }
 
-#link{
+#btn4{
   color: white;
   font-size: 20px;
 }
 
-#map{
-  width: 100%;
-  height: 200px;
+#btn5{
+  color: white;
+  font-size: 20px;
+}
+
+#btn6{
+  color: white;
+  font-size: 20px;
+}
+
+#link{
+  color: white;
+  font-size: 20px;
 }
